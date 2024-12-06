@@ -1,0 +1,137 @@
+/* Estilos generales */
+.content-wrapper {
+    display: flex; /* Coloca el video y el acordeón en una fila */
+    align-items: flex-start; /* Alinea ambos elementos en la parte superior */
+    gap: 20px; /* Espacio entre el video y el acordeón */
+    padding: 20px;
+    justify-content: center; /* Centra el contenido horizontalmente */
+}
+body {
+    display: flex; /* Usa Flexbox para centrar en la página */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
+    margin: 0; /* Elimina márgenes por defecto */
+    background-color: #f4f4f4; /* Color de fondo */
+}
+.main-container {
+    display: flex; /* Alinea el video y el acordeón horizontalmente */
+    align-items: flex-start; /* Alinea ambos elementos en la parte superior */
+    justify-content: center; /* Centra horizontalmente en la página */
+    padding: 20px;
+    gap: 20px; /* Espacio entre el video y el acordeón */
+}
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Estilos del acordeón */
+.accordion {
+    width: 100%;
+    max-width: 400px; /* Ajusta el ancho del acordeón */
+    margin: 20px; /* Espacio alrededor del acordeón */
+}
+
+.accordion-item {
+    background-color: #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-title {
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    background-color: #007BFF;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.3s;
+}
+
+.accordion-title:hover {
+    background-color: #0056b3;
+}
+
+.accordion-content {
+    padding: 15px;
+    display: none;
+    font-size: 1em;
+    color: #333;
+    border-top: 1px solid #e0e0e0;
+}
+
+.sub-accordion-item {
+    margin: 5px 0 5px 20px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+}
+
+.sub-accordion-title {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #555;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.sub-accordion-title:hover {
+    background-color: #444;
+}
+
+.sub-accordion-content {
+    padding: 10px;
+    display: none;
+    font-size: 0.9em;
+    color: #333;
+    border-top: 1px solid #e0e0e0;
+}
+
+/* Estilos de la sección de video */
+.video-section {
+    display: flex; /* Usa Flexbox para centrar */
+    flex-direction: column; /* Alinea elementos en columna */
+    align-items: center; /* Centra horizontalmente */
+    justify-content: center; /* Centra verticalmente (opcional) */
+    margin: 20px; /* Agrega margen para separación */
+    max-width: 860px;
+
+}
+
+.video-section h1 {
+    margin-bottom: 10px; /* Espacio entre el título y el video */
+    text-align: center; /* Centra el texto del título */
+}
+
+
+.video-container {
+    display: none; /* Oculta el video inicialmente */
+    width: 100%; /* Ocupa todo el ancho */
+    max-width: 600px; /* Ancho máximo del video */
+    height: 400px; /* Altura del video */
+    position: absolute; /* Posiciona el video en el centro */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centra el video */
+}
+
+iframe {
+    width: 100%; /* Ocupa todo el ancho */
+    height: 100%; /* Ocupa toda la altura */
+    border: none; /* Sin borde */
+}
+
+.info-link {
+    color: #007BFF;
+    cursor: pointer;
+    text-decoration: underline;
+	margin-right: 10px; /* Espacio entre enlaces */
+
+}
+
+.info-link:hover {
+    color: #0056b3;
+}
